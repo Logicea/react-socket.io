@@ -1,0 +1,32 @@
+# ---> Project
+lib/
+
+# ---> NodeJS
+npm-debug.log
+yarn-error.log
+# Coverage directory used by tools like istanbul
+coverage
+node_modules
+
+# ---> NetBeans
+nbproject/
+nbactions.xml
+
+# ---> SublimeText
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# backup directory created by sublime plugin
+*.sublime-backup
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# ---> MacOS
+.DS_STORE
