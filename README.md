@@ -12,7 +12,7 @@ Usage
 For the most simple use case just wrap the component you want to connect on
 socket.io with:
 
-```
+```javascript
 ReactSocketIO(
   'http://socket-io-url', // can be a function if you need params like auth: (props) => `http://socket-io-url?param=${props.param}`,
   (event, data, props) => console.log(`SocketIO event: ${event} with payload: ${data}`),
@@ -28,7 +28,7 @@ and pass the endpoint and onMessage implementations to respond to received messa
 For example if we want to render the last registered user on system based on
 socket.io 'lastRegistered' event. One approach could be:
 
-```
+```javascript
 import ReactSocketIO from 'react-socket.io'
 import { Component } from 'react'
 import compose from 'redux'
@@ -65,7 +65,7 @@ Example - simple without 'redux'
 There is no coupling between *react-socket.io* and redux. It helps using
 a state container but you can implement the above as:
 
-```
+```javascript
 import ReactSocketIO from 'react-socket.io'
 import { Component } from 'react'
 
